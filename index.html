@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div class="container">
+      <section class="welcome">
+        <h1>Welcome to the Pokedex</h1>
+        <p>
+          Here you can find information about pokemon by using the search bar
+          below on the left. You can search by ID or name and filter by type.
+        </p>
+      </section>
+      <section class="search-bar">
+        <input type="text" name="search" id="search" placeholder="pokemon name, id"/>
+        <!-- <div class="types">
+          <button>Earth</button>
+          <button>Fire</button>
+          <button>Water</button>
+          <button>Bug</button>
+          <button>Flying</button>
+          <button>Ground</button>
+          <button>Grass</button>
+        </div>
+        <h3>Filters:</h3> -->
+      </section>
+      <section id="search-results">
+        <ul id="search-results-list">
+
+        </ul>
+      </section>
+      <main id="pokemon-info">
+        <section id="pokemon-info-main">
+          <h2 id="pokemon-info-name">Pokemon</h2>
+          <img src="" alt="" srcset="" id="pokemon-info-img">
+        </section>
+        <h3 id="pokemon-info-id">ID</h3>
+        <h4 id="pokemon-info-type">Types</h4>
+        <h4 id="pokemon-info-stats">Stats:</h4>
+        <h4 id="pokemon-info-abilities">Abilities:</h4>
+      </main>
+    </div>
+
+    <footer id="footer">
+      This project uses the API available from <a href="https://pokeapi.co/">PokeAPI</a>
+    </footer>
+
+</body>
+</html>
