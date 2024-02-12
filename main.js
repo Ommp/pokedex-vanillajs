@@ -9,7 +9,7 @@ let pokemonNames;
 let fetchedPokemon = new Map();
 
 async function fetchAllPokemonNames() {
-  const response = await fetch("/pokeapi.co.json");
+  const response = await fetch("https://ommp.github.io/pokedex-vanillajs/pokeapi.co.json");
   // const response = await fetch("https://pokeapi.co/api/v2/pokemon/?limit=1302");
   const result = await response.json();
   pokemonNames = result.results.map((pokemon) => pokemon.name);
